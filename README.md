@@ -6,9 +6,9 @@ I wanted to put together a smooth, 'production ready' environment which people c
 
 ## Rules
 
-No dependencies can be added, use only what is already available from the `answer.ts` scope.
+No dependencies can be added, use only what is already available from the `index.ts` scope.
 Only look at files within the puzzle task folders (eg src/001)
-Only modify `answer.ts` and MAYBE `types.ts` in the puzzle task folders
+Only modify `index.ts` and MAYBE `types.ts` in the puzzle task folders
 
 ## Get started
 
@@ -36,10 +36,12 @@ Go to /src/001 and [open the readme.md](src/001/README.md)
 
 The has the instructions for the first task.
 
-Attempt to answer it and then run the tests to see if you have a working solution:
+Attempt to complete a working implementation and then run the tests to see if you have a working solution:
 ```shell
 npm test
 ```
+
+If you have a working implementation run `npm start` to record your answer!
 
 If you want to see what you compiled Javascript would look like, run `npm run build` and take a look in the `build` folder.
 
