@@ -2,7 +2,11 @@ import puzzleInput from "./data.json";
 import { AnswerArgs, AnswerReturn } from "./types";
 
 function answer(_puzzleInput: AnswerArgs): AnswerReturn {
-  return 0;
+  return _puzzleInput.reduce((prev: number, actual: number): number => {
+    if (actual % 2 > 0) {
+      return prev + 1;
+    } else return prev;
+  }, 0);
 }
 
 const result = answer(puzzleInput);
